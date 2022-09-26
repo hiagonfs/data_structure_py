@@ -22,7 +22,7 @@ class Fila:
         self.rear.next = aux
         self.rear = aux
 
-    def qequeue(self):
+    def dequeue(self):
         if self.isEmpty():
             return
         aux = self.front
