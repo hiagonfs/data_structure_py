@@ -119,4 +119,21 @@ class LinkedList:
             max = atual.valor
           atual = atual.proximo
         return max 
+    
+    def decrescente(self):
+        if self.head == None: return
+        aux = self.head
+        while aux.proximo != None:
+            if aux.valor <= aux.proximo.valor:
+                return False
+        aux = aux.proximo
+        return True 
 
+    def crescente(self):
+        if self.head == None: return
+        aux = self.head
+            while aux.proximo != None:
+                if aux.valor >= aux.proximo.valor:
+                    return False
+                aux = aux.proximo
+        return True
